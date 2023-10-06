@@ -1,0 +1,237 @@
+@media only screen and (min-width: 440px)
+{
+
+
+body {
+
+    background-color: rgb(53, 53, 53);
+    margin: 0px;
+
+}
+
+img {
+    -webkit-user-drag: none;
+}
+
+.header {
+    width: 100%;
+
+    display: inline-block;
+    
+}
+
+.header-image {
+
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.content-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px;
+    margin-top: 0px;
+    
+    
+    background-color: rgb(40, 40, 40);
+    height: 2000px;
+    opacity: 100%;
+}
+
+
+
+.searchbar {
+    height: 50px;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+   
+}
+
+.input-text{
+    width: 13rem;
+    height: 2rem;
+    border-radius: 10px;
+    border: none;
+    flex: 50%;
+   
+    
+}
+
+.search-button {
+    background-color:rgb(83, 147, 65);
+    color: white;
+    border: 0px;
+    border-radius: 30px;
+    margin-left: 10px;
+    width: 5rem;
+    height: 2rem;
+    cursor: pointer;
+    flex: 50%;
+}
+
+    
+}
+
+@media only screen and (max-width: 440px)
+{
+    
+
+    body {
+        font-family: 'Roboto';
+        background-color: rgb(53, 53, 53);
+        margin: 0px;
+    }
+    
+    img {
+        -webkit-user-drag: none;
+    }
+    
+    .header {
+        width: 100%;
+    
+        display: inline-block;
+        
+    }
+    
+    .header-image {
+    
+        height: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    
+    .content-wrapper{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0px;
+        margin-top: 0px;
+        
+        
+        background-color: rgb(40, 40, 40);
+        height: 2000px;
+        opacity: 100%;
+    }
+    
+    
+    
+    .searchbar {
+        height: 80px;
+        width: 1fr;
+        padding: 20px;
+        display: block;
+        
+        
+       
+    }
+    
+    .input-text{
+        
+        height: 2rem;
+        border-radius: 10px;
+        border: none;
+        display: block;
+        width: 100%;
+       
+        
+    }
+    
+    .search-button {
+        background-color:rgb(83, 147, 65);
+        color: white;
+        border: 0px;
+        border-radius: 30px;
+        margin-top: 10px;
+        width: 5rem;
+        height: 2rem;
+        cursor: pointer;
+        width: 100%;
+        
+    }
+
+    .td1 {
+        color: white;
+        background-color: rgb(0, 0, 0);
+        border: 2px; 
+        border-color: rgb(21, 194, 122);
+        padding: 10px;
+        
+    }
+
+    .highlighted {
+        background-color: rgb(19, 114, 43);
+        
+        transition: background-color 0.5s;
+    }
+    td {
+        background-color: transparent; /* Culoare de fundal inițială */
+        font-weight: normal; /* Stil de text inițial */
+        transition: background-color 0.5s;
+        
+        
+    }
+
+    h2 {
+        color: rgb(15, 199, 15);
+        text-align: center;
+        
+    }
+
+    p {
+        text-align: justify;
+    }
+
+    .headline {
+        color:aliceblue;
+        font-style: normal;
+        text-align: center;
+        font-size: 30px;
+        font-weight: bold;
+        background-color: rgba(195, 214, 18, 0.541);
+        font-family: roboto;
+        padding: 10px;
+    }
+
+    #scrollToTopBtn {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 40px;
+        height: 40px;
+        border-radius: 100px;
+        border-width: 0px;
+
+   
+        cursor: pointer;
+        opacity: 0;
+        transition: opacity 0.3s, transform 0.3s;
+        animation: slideIn 0.3s ease-in-out forwards;
+        background-image: url('button-up.png'); 
+        background-size: cover; 
+        background-repeat: no-repeat; 
+    }
+   
+
+    @keyframes slideIn {
+        from {
+            transform: translateY(100%);
+            opacity: 0;
+        }
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+    
+    #scrollToTopBtn.show {
+        display: block;
+    }
+        
+    }

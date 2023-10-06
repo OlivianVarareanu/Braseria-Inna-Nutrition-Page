@@ -1,0 +1,1624 @@
+<!DOCTYPE html>
+<html lang="en" style="width: 100%;">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="icon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Braseria Inna Meniu Caloric</title>
+</head>
+<body>
+
+        <div class="header">
+            <a href="https://www.facebook.com/braseriainna.ro"><img src="logo.png" class="header-image" > </a>
+            
+        </div>
+
+   
+
+        <div class="searchbar" >
+
+            <input type="text" placeholder="  Ce fel de mâncare cauți?" class="input-text" id="search-input">
+            
+            <button class="search-button" onclick="cautaPreparat()">Caută</button>
+        </div>
+
+        <button id="scrollToTopBtn" onclick="scrollToTop()">
+        <img src="button-up.png" alt=""></button>
+
+        <table style="margin: 15px; background-color: rgb(27, 27, 27); padding: 10px;">
+            
+            <tr>
+                <td class="headline" id="dont-include">Mic dejun</td> 
+            </tr>
+            <tr>
+                
+
+                <td class="td1" >
+                    <h2>Mic dejun clasic (350g)</h2>
+                    <p>ou fiert (100g), șuncă presată (50g), 
+                        cașcaval (30g), telemea (30g), 
+                        ardei gras (20g), măsline (20g), roșii (20g),
+                        pâine prăjită (80g), zacuscă (50g)
+                        Valori nutritionale / 100g
+                        Valoare energetica: 193.84 kCal / 809.44 kJ
+                        Grasimi: 11.49 g | acizi grasi saturati: 2.95 g 
+                        Glucide: 11.22 g | Zaharuri: 0.31 g
+                        Proteine: 11.39 g | Sare: 0.30 g</p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="td1">
+                    <h2>Ochiuri simple (320g)</h2>
+                    <p>2 ouă (100g), telemea (30g), roșii (30g), 
+                        măsline (30g), turtă pe vatră (80g)
+                        suncă presată (50g)
+                        Valori nutritionale / 100g
+                        Valoare energetica: 201.16 kCal / 841.45 kJ
+                        Grasimi: 10.78 g | acizi grasi saturati: 3.53 g
+                        Glucide: 14.01 g | Zaharuri: 0.29 g
+                        Proteine: 12.02 g | Sare: 0.39 g
+                        </p>
+                </td>
+            </tr>
+
+            <tr>
+
+                <td class="td1">
+                    <h2>Omletă cu kaiser (365g)</h2>
+                    <p>ouă (100g), cașcaval (30g), kaiser (30g),
+                        telemea (30g), parmezan, roșii (50g), 
+                        castraveți (40g), rucola, măsline (20g), 
+                        lipie (65g)
+                        Valori nutritionale / 100g
+                        Valoare energetica: 1452.80 kCal / 5999.69 kJ 
+                        Grasimi: 139.77 g | acizi grasi saturati: 3.73 g |
+                        Glucide: 25.78 g | Zaharuri: 1.14 g 
+                        Proteine: 22.94 g / Sare: 20.32 g
+                        </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="td1">
+                    <h2>Omletă cu ciuperci/
+                        /spanac (400g)</h2>
+                    <p>ouă (100g), ciuperci/spanac (70g), 
+                        cașcaval (30g) , cârnăciori (50g),  rucola, 
+                        măsline (30g), roșii (50g) lipie (65g)
+                        Valori nutritionale / 100g
+                        Valoare energetica: 172.49 kCal / 720.16 kJ
+                        Grasimi: 10.36 g / acizi grasi saturati: 1.72 g
+                        Glucide: 10.49 g / Zaharuri: 1.27 g
+                        Proteine: 9.33 g | Sare: 0.41 g</p>
+                </td>
+            </tr>
+
+            <tr>
+
+                <td class="td1">
+                    <h2>Khachapuri (370g)</h2>
+                    <p>blat (160g), mozzarella (30g), 
+                        gorgonzola (30g), 
+                        ouă (100g), kaiser (50g)
+                        Valori nutritionale / 100g
+                        Valoare energetica: 476.86 kCal / 2013.18 kJ 
+                        Grasimi: 10.79 g | acizi grasi saturati: 5.07 g 
+                        Glucide: 75.53 g | Zaharuri: 0.31 g 
+                        Proteine: 19.41 g | Sare: 0.57 g
+                        </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="headline" id="dont-include">Startere</td> 
+            </tr>
+
+            <tr>
+
+                <td class="td1">
+                    <h2>Lipie cu cremă de avocado
+                        și usturoi (230g)</h2>
+                    <p>lipie (100g), usturoi, avocado (100g),
+                        ardei gras, roșii (30g), cucina
+                        Valori nutritionale / 100g
+                        Valoare energetica: 210.44 kCal / 881.74 kJ 
+                        Grasimi: 10.12 g | acizi grasi saturati: 3.09 g
+                        Glucide: 25.76 g | Zaharuri: 1.72 g 
+                        Proteine: 4.08 g | Sare: 0.87 g
+                        </p>
+                </td>
+            </tr>
+
+            <tr>
+
+                
+                <td class="td1">
+                    <h2>Bruschete cu somon
+                        și roșii (260g)</h2>
+                    <p>somon (35g), roșii (100g), pâine toast (80g),
+                        usturoi, cremă de brânză (50g)
+                        Valori nutritionale / 100g
+                        Valoare energetica: 158.31 kCal / 663.12 kJ
+                        Grasimi: 7.77 g | acizi grasi saturati: 3.97 g 
+                        Glucide: 15.77 g | Zaharuri: 1.88 g 
+                        Proteine: 6.31 g | Sare: 1.83 g
+                        </p>
+                </td>
+            </tr>   
+            
+            <tr>    
+                <td class="td1">
+                    <h2> Bruschete cu ardei
+                        copți (250g)</h2> 
+                    <p>ardei copți (110g), cremă de brânză (50g),
+                        pâine toast (80g), usturoi, măsline
+                        Valori nutritionale / 100g
+                        Valoare energetica: 163.60 kCal / 684.90 kJ 
+                        Grasimi: 8.31 g | acizi grasi saturati: 4.24 g 
+                        Glucide: 18.35 g | Zaharuri: 3.86 g 
+                        Proteine: 3.86 g | Sare: 0.64 g
+                        </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="headline" id="dont-include">Supe</td> 
+            </tr>
+
+            <tr>
+                <td class="td1">
+                    <h2>Supă cremă de ciuperci
+                        (400g)</h2>
+                    <p>
+                        ciuperci (300g), crutoane (50g), 
+                        cucina (50ml)
+                        Valori nutritionale / 100g
+                        Valoare energetica: 89.16 kCal / 374.83 kJ 
+                        Grasimi: 3.27 g | acizi grasi saturati: 2.19 g 
+                        Glucide: 11.71 g | Zaharuri: 3.36 g 
+                        Proteine: 3.21 g | Sare: 0.23 g
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="td1">
+                    <h2>Supă cremă de dovlecel
+                        cu cârnăciori picanți (400g)</h2>
+                    <p>
+                        dovlecel (250g), cârnăciori (50g),
+                        crutoane (50g), cucina (50ml)
+                        Valori nutritionale / 100g
+                        Valoare energetica: 92.18 kCal / 386.29 kJ
+                        Grasimi: 4.39 g | acizi grasi saturati: 2.15 g
+                        Glucide: 9.72 g | Zaharuri: 3.18 g
+                        Proteine: 3.44 g | Sare: 0.26 g
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="td1">
+                    <h2>Supă cremă de broccoli
+                        (400g)</h2>
+                    <p>
+                        broccoli (250g), cartofi (50g), 
+                        crutoane (50g), cucina (50ml)
+                        Valori nutritionale / 100g
+                        Valoare energetica: 88.34 kCal / 372.69 kJ 
+                        Grasimi: 2.21 g | acizi grasi saturati: 1.27 g 
+                        Glucide: 13.67 g | Zaharuri: 2.53 g 
+                        Proteine: 3.44 g | Sare: 0.79 g
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="td1">
+                    <h2>Supă cremă de cartofi
+                        cu bacon (400g)</h2>
+                    <p>
+                        cartofi (250g), kaiser (50g),
+                        crutoane (50g), cucina (50ml)
+                        Valori nutritionale / 100g
+                        Valoare energetica: 1377.66 kCal / 5689.47 kJ 
+                        Grasimi: 132.48 g | acizi grasi saturati: 2.42 g 
+                        Glucide: 30.95 g | Zaharuri: 2.13 g 
+                        Proteine: 15.38 g | Sare: 22.52 g
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="td1">
+                    <h2>Supă cremă de roșii (400g)</h2>
+                    <p>
+                        roșii (250g), sos de roșii (50g),
+                        crutoane (50g), cucina (50ml)
+                        Valori nutritionale / 100g
+                        Valoare energetica: 73.50 kCal / 309.38 kJ 
+                        Grasimi: 2.41 g | acizi grasi saturati: 1.27 g 
+                        Glucide: 10.85 g | Zaharuri: 3.31 g 
+                        Proteine: 2.11 g | Sare: 0.24 g
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="td1">
+                    <h2>Ciorba zilei la recomandarea
+                        bucătarului (600g)</h2>
+                    <p>
+                        Ciorba include ardei, smântână, ardei iute și turtă pe vatră
+                        Perișoare -
+                        Rădăuțeană -
+                        Afumătură -
+                         A la grec de pui -
+                        Supă de pui cu tăiței / găluște -
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="headline" id="dont-include">Salate</td> 
+            </tr>
+
+            <tr>
+                <td class="td1">
+                    <h2>Salată Inna (500g)</h2>
+                    <p>
+                        piept curcan (120g), telemea (60g), roșii 
+                        cherry (60g), castraveți (80g), ceapă 
+                        roșie (20g), măsline (20g), oregano, 
+                        dressing, avocado (75g) salată verde (70g),
+                        pâine prăjită (30g)
+                        Valori nutritionale / 100g
+                        Valoare energetica: 82.56 kCal / 345.79 kJ 
+                        Grasimi: 4.07 g | acizi grasi saturati: 1.70 g 
+                        Glucide: 5.06 g | Zaharuri: 0.88 g 
+                        Proteine: 6.43 g | Sare: 0.30 g
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="td1">
+                    <h2>Salată bulgărească (450g)</h2>
+                    <p>
+                        șuncă (100g), telemea (50g),  ouă de prepeliță
+                        (50g), măsline (30g), ardei gras (30g),
+                        castraveți (80g), roșii cherry (60g),
+                        ceapă roșie, dressing
+                        pâine prăjită (30g)
+                        Valori nutritionale / 100g
+                        Valoare energetica: 119.91 kCal / 501.21 kJ 
+                        Grasimi: 6.73 g | acizi grasi saturati: 2.82 g 
+                        Glucide: 6.42 g | Zaharuri: 0.61 g 
+                        Proteine: 8.41 g | Sare: 0.76 g
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="td1">
+                    <h2>Salată de ton cu măr (420g)</h2>
+                    <p>
+                        salată iceberg (100g), ton (80g), măsline (20g), 
+                        ceapă roșie (20g), castraveți (80g), roșii cherry (60g), 
+                        porumb (20g), măr, dressing, pâine prăjită (30g)
+                        Valori nutritionale / 100g
+                        Valoare energetica: 47.48 kCal / 200.89 kJ 
+                        Grasimi: 0.73 g | acizi grasi saturati: 0.09 g 
+                        Glucide: 6.45 g | Zaharuri: 2.21 g 
+                        Proteine: 3.78 g | Sare: 0.16 g
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="td1">
+                    <h2>Salată fitness (450g)</h2>
+                    <p>
+                        rucola (50g), ardei (50g), castraveți (100g), 
+                        roșii cherry (100g), măsline (40g), morcov (20g),
+                        ceapă verde (30g), porumb (30g), 
+                        pâine prăjită (30g), semințe pin, goji, dressing
+                        Valori nutritionale / 100g
+                        Valoare energetica: 50.71 kCal / 213.86 kJ 
+                        Grasimi: 1.32 g | acizi grasi saturati: 0.14 g 
+                        Glucide: 7.93 g | Zaharuri: 1.37 g 
+                        Proteine: 1.78 g | Sare: 0.18 g
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="td1">
+                    <h2>Salată cu fructe de mare (450g)</h2>
+                    <p>
+                        fructe de mare (150g), avocado (100g), 
+                        salată verde (30g), roșii (50g), castraveți (30g), 
+                        ardei kapia (30g), sos de lămâie (30ml), ulei
+                        de măsline, pâine prăjită (30g)
+                        Valori nutritionale / 100g
+                        Valoare energetica: 100.30 kCal / 418.49 kJ 
+                        Grasimi: 6.22 g | acizi grasi saturati: 0.45 g 
+                        Glucide: 6.75 g | Zaharuri: 0.69 g 
+                        Proteine: 4.34 g | Sare: 0.03 g
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="headline" id="dont-include">Platouri</td> 
+            </tr>
+
+            <tr>
+                <td class="td1">
+                    <h2>Platoul berarului (800g)</h2>
+                    <p>
+                        aripioare (100g), cârnăciori bere (100g),
+                        cârnăciori picanți (100g)
+                        mici (100g), cartofi chips (150g), telemea (50g)
+                        murături (50g), turtă pe vatră (100g), sos (30g)
+                        Valori nutritionale / 100g
+                        Valoare energetica: 264.98 kCal / 1104.70 kJ
+                        Grasimi: 17.18 g | acizi grasi saturati: 3.27 g
+                        Glucide: 18.67 g | Zaharuri: 0.14 g
+                        Proteine: 8.92 g | Sare: 0.33 g
+                        
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="td1">
+                    <h2>Platou scrijele (600g)</h2>
+                    <p>
+                        piept de porc (100g), slăninuță (50g),
+                        brânză de burduf (80g), telemea (80g), lapte
+                        acru (100ml), scrijele (200g)
+                        Valori nutritionale / 100g
+                        Valoare energetica: 190.08 kCal / 790.00 kJ 
+                        Grasimi: 14.28 g | acizi grasi saturati: 3.67 g
+                        Glucide: 4.95 g | Zaharuri: 0.74 g
+                        Proteine: 10.45 g | Sare: 1.79 g
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="td1">
+                    <h2>Platoul baciului (600g)</h2>
+                    <p>
+                        pastramă oaie (200g), cârnăciori oaie (100g),
+                        brânză de burduf (70g), mămăligă (110g),
+                        muraturi (100g)
+                        Valori nutritionale / 100g
+                        Valoare energetica: 372.15 kCal / 1550.80 kJ 
+                        Grasimi: 24.67 g | acizi grasi saturati: 3.69 g 
+                        Glucide: 6.55 g | Zaharuri: 1.96 g 
+                        Proteine: 30.99 g | Sare: 4.97 g
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="td1">
+                    <h2>Platou Fălticenean
+                        (700g)</h2>
+                    <p>
+                        pulpă curcan (50g), ficat de curcan (50g)
+                        piept de pui (50g), aripioare (70g),
+                        cârnăciori (50g), cartofi chips (150g),
+                        telemea (40g), salată de varză (50g), sos (70g)
+                        turtă pe vatră (130g)
+                        Valori nutritionale / 100g
+                        Valoare energetica: 167.17 kCal / 700.65 kJ 
+                        Grasimi: 7.86 g | acizi grasi saturati: 1.93 g 
+                        Glucide: 14.59 g | Zaharuri: 9.18 g 
+                        Proteine: 9.53 g | Sare: 2.37 g
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="td1">
+                    <h2>Platou brânzeturi (350g)</h2>
+                    <p>
+                        telemea (40g), gorgonzola (40g), cheddar (40g),
+                        parmezan (40g), emmentaler (40g),
+                        măsline (20g), fructe (40g), rucola, miere (30g)
+                        cașcaval (40g)
+                        Valori nutritionale / 100g
+                        Valoare energetica: 273.02 kCal / 1137.21 kJ 
+                        Grasimi: 18.50 g | acizi grasi saturati: 10.56 g 
+                        Glucide: 11.50 g | Zaharuri: 9.74 g 
+                        Proteine: 15.13 g | Sare: 1.25 g
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="td1">
+                    <h2>Platou țărănesc (700g)</h2>
+                    <p>
+                        cârnați (60g), piept porc (50g), ceafă 
+                        porc (50g), slăninuță (50g), brânză burduf (40g), 
+                        cartofi chips (150g), ou (50g), murături (50g), 
+                        sos (70g), turtă pe vatră (130g)
+                        Valori nutritionale / 100g
+                        Valoare energetica: 156.73 kCal / 655.93 kJ 
+                        Grasimi: 8.14 g | acizi grasi saturati: 0.81 g
+                        Glucide: 14.69 g | Zaharuri: 7.07 g 
+                        Proteine: 6.19 g | Sare: 2.23 g
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="td1">
+                    <h2>Platou mix grill (600g)</h2>
+                    <p>
+                        pulpă de curcan (50g), ficăței de curcan (50g)
+                        piept de pui (50g), ceafă de porc (50g)
+                        cartofi chips (150g), sos (30g)
+                        turtă pe vatră (130g), varză (100g)
+                        Valori nutritionale / 100g
+                        Valoare energetica: 158.05 kCal / 663.32 kJ 
+                        Grasimi: 6.70 g | acizi grasi saturati: 0.63 g 
+                        Glucide: 15.23 g | Zaharuri: 7.38 g 
+                        Proteine: 9.20 g | Sare: 1.94 g
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="headline" id="dont-include">Pizza</td> 
+            </tr>
+
+            <tr>
+                <td class="td1">
+                    <h2>Pizza Pollo (600g)</h2>
+                    <p>
+                        blat (320g), sos roșii (30g), mozzarella (130g), 
+                        piept de pui (40g), gorgonzola (20g), 
+                        măsline (20g), porumb (20g), ardei kapia (20g)
+                        Valori nutritionale / 100g
+                        Valoare energetica: 414.22 kCal / 1749.25 kJ 
+                        Grasimi: 8.94 g | acizi grasi saturati: 4.05 g 
+                        Glucide: 66.99 g | Zaharuri: 0.62 g 
+                        Proteine: 16.44 g | Sare: 0.60 g
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="td1">
+                    <h2>Pizza Aloha (600g)</h2>
+                    <p>
+                        blat (320g), sos roșii (50g), mozzarella (130g),
+                        șuncă (50g), ananas (50g)
+                        Valori nutritionale / 100g
+                        Valoare energetica: 436.27 kCal / 1843.16 kJ 
+                        Grasimi: 8.78 g | acizi grasi saturati: 4.08 g 
+                        Glucide: 71.87 g | Zaharuri: 1.57 g 
+                        Proteine: 17.44 g | Sare: 0.32 g
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="td1">
+                    <h2>Pizza Margherita (600g)</h2>
+                    <p>
+                        blat (320g), sos roșii (50g), mozzarella (170g),
+                        busuioc, sos ketchup (50g)
+                        Valori nutritionale / 100g
+                        Valoare energetica: 437.93 kCal / 1850.30 kJ 
+                        Grasimi: 8.72 g | acizi grasi saturati: 3.12 g 
+                        Glucide: 74.11 g | Zaharuri: 0.44 g 
+                        Proteine: 15.76 g | Sare: 0.30 g
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="td1">
+                    <h2>Pizza Quatro Formaggi (600g)</h2>
+                    <p>
+                        blat (320g), mozzarella (130g), sos (50g)
+                        parmezan (10g), cașcaval (30g), roșii (10g)
+                        emmentaler (30g), gorgonzola (30g)
+                        Valori nutritionale / 100g
+                        Valoare energetica: 439.99 kCal / 1855.40 kJ 
+                        Grasimi: 11.65 g | acizi grasi saturati: 5.55 g 
+                        Glucide: 64.57 g | Zaharuri: 1.08 g 
+                        Proteine: 19.22 g | Sare: 0.40 g
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="td1">
+                    <h2>Pizza cu ton (600g)</h2>
+                    <p>
+                        blat (320g), sos roșii (40g), mozzarella (120g), 
+                        ton (80g), măsline (20g), ceapă roșie, 
+                        porumb (20g)
+                        Valori nutritionale / 100g
+                        Valoare energetica: 421.12 kCal / 1779.27 kJ 
+                        Grasimi: 8.38 g | acizi grasi saturati: 3.76 g 
+                        Glucide: 68.24 g | Zaharuri: 0.91 g 
+                        Proteine: 18.19 g | Sare: 0.47 g
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="td1">
+                    <h2>Pizza cu pui (600g)</h2>
+                    <p>
+                        blat (320g), sos roșii (40g), mozzarella (130g)
+                        piept de pui (50g), porumb (30g) 
+                        măsline (30g)
+                        Valori nutritionale / 100g
+                        Valoare energetica: 434.10 kCal / 1833.71 kJ 
+                        Grasimi: 8.96 g | acizi grasi saturati: 4.02 g 
+                        Glucide: 70.31 g | Zaharuri: 0.82 g 
+                        Proteine: 18.06 g | Sare: 0.39 g
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td class="td1">
+                    <h2>Pizza Quatro Carni (640g)</h2>
+                    <p>
+                        blat (320g), sos roșii (50g), mozzarella (150g)
+                        cabanos (30g), șuncă (30g), kaiser (30g)
+                        salam (30g)
+                        Valori nutritionale / 100g
+                        Valoare energetica: 449.53 kCal / 1896.55 kJ 
+                        Grasimi: 11.15 g | acizi grasi saturati: 5.07 g 
+                        Glucide: 68.97 g | Zaharuri: 0.86 g 
+                        Proteine: 18.32 g | Sare: 2.35 g
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="td1">
+                    <h2>Pizza Quatro Stagioni (610g)</h2>
+                    <p>
+                        blat (320g), sos roșii (50g), șuncă (30g)
+                        ciuperci (30g), porumb (30g), mozzarella
+                        (150g)
+                        Valori nutritionale / 100g
+                        Valoare energetica: 440.84 kCal / 1862.41 kJ 
+                        Grasimi: 8.92 g | acizi grasi saturati: 4.23 g 
+                        Glucide: 72.49 g | Zaharuri: 0.97 g 
+                        Proteine: 17.66 g | Sare: 0.44 g
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="td1">
+                    <h2>Pizza Peperoni (600g)</h2>
+                    <p>
+                        blat (320g), sos roșii (50g), mozzarella (150g)
+                        peperoni (80g)
+                        Valori nutritionale / 100g
+                        Valoare energetica: 454.08 kCal / 1918.52 kJ 
+                        Grasimi: 9.06 g | acizi grasi saturati: 4.33 g 
+                        Glucide: 75.51 g | Zaharuri: 1.28 g 
+                        Proteine: 17.62 g | Sare: 0.35 g
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="td1">
+                    <h2>Pizza Vegetală (600g)</h2>
+                    <p>
+                        blat (320g), sos roșii (50g), cascaval 
+                        vegetal (130g) ardei gras (20g), măsline (40g)
+                        porumb (20g)  ciuperci (20g)
+                        Valori nutritionale / 100g
+                        Valoare energetica: 362.07 kCal / 1532.48 kJ 
+                        Grasimi: 5.06 g | acizi grasi saturati: 1.74 g 
+                        Glucide: 68.36 g | Zaharuri: 0.89 g 
+                        Proteine: 10.78 g | Sare: 0.39 g
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="td1">
+                    <h2>Pizza Kebab (700g)</h2>
+                    <p>
+                        blat (320g), sos roșii (50g), mozzarella (100g)
+                        carne de pui (150g), felii roșii (30g), ceapă (30g)
+                        cartofi (20g), castraveți
+                        Valori nutritionale / 100g
+                        Valoare energetica: 397.98 kCal / 1680.18 kJ
+                        Grasimi: 9.00 g | acizi grasi saturati: 2.80 g
+                        Glucide: 63.40 g | Zaharuri: 1.21 g
+                        Proteine: 15.85 g | Sare: 0.53 g
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="td1">
+                    <h2>Pizza Inna (600g)</h2>
+                    <p>
+                        blat (320g), sos de roșii (50g), mozarella (100g)
+                        mușchi file (50g), cabanos (50g), roșii (20g)
+                        telemea (20g), rucola
+                        Valori nutritionale / 100g
+                        Valoare energetica: 453.56 kCal / 1915.78 kJ
+                        Grasimi: 9.50 g | acizi grasi saturati: 2.18 g
+                        Glucide: 75.33 g | Zaharuri: 0.52 g
+                        Proteine: 16.70 g | Sare: 0.45 g
+
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="td1">
+                    <h2>Pizza Party (1720g)</h2>
+                    <p>
+                        blat (500g), sos rosii (100g), mozzarella (400g),
+                        gorgonzola (50g), piept de pui (80g), suncă (30g)
+                        cabanos (30g), salam (30g), peperoni (80g)
+                        ciuperci (30g), carne kebab (80g), ceapă rosie (30g)
+                        murături (20g), măsline (30g), porumb (30g)
+                        ardei kapia (30g), sos ketchup (150g)
+                        Valori nutritionale / 100g
+                        Valoare energetica: 345.63 kCal / 1455.94 kJ 
+                        Grasimi: 10.40 g | acizi grasi saturati: 5.22 g 
+                        Glucide: 46.72 g | Zaharuri: 1.04 g 
+                        Proteine: 16.29 g | Sare: 1.24 g
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="headline" id="dont-include">Peynirli</td> 
+            </tr>
+
+            <tr>
+                <td class="td1">
+                    <h2>Peynirli Margherita (300g)</h2>
+                    <p>
+                        blat (160g), sos roșii (30g)
+                        mozzarella (100g), busuioc
+                        Valori nutritionale / 100g
+                        Valoare energetica: 480.92 kCal / 2031.47 kJ 
+                        Grasimi: 9.96 g | acizi grasi saturati: 4.81 g 
+                        Glucide: 78.95 g | Zaharuri: 0.94 g 
+                        Proteine: 18.86 g | Sare: 0.37 g
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="td1">
+                    <h2>Peynirli cu pui (300g)</h2>
+                    <p>
+                        blat (160g), sos roșii (20g), mozzarella (80g)
+                        piept de pui (30g), măsline (10g)
+                        porumb (10g)
+                        Valori nutritionale / 100g
+                        Valoare energetica: 420.20 kCal / 1774.34 kJ 
+                        Grasimi: 9.22 g | acizi grasi saturati: 3.84 g 
+                        Glucide: 67.22 g | Zaharuri: 0.80 g 
+                        Proteine: 17.09 g | Sare: 0.65 g
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="td1">
+                    <h2>Peynirli cu ton (300g)</h2>
+                    <p>
+                        blat (160g), sos roșii (20g), mozzarella (80g)
+                        ton (40g), măsline (10g), ceapă roșie, 
+                        porumb
+                        Valori nutritionale / 100g
+                        Valoare energetica: 423.47 kCal / 1788.69 kJ 
+                        Grasimi: 8.86 g | acizi grasi saturati: 3.86 g 
+                        Glucide: 67.90 g | Zaharuri: 0.84 g 
+                        Proteine: 18.04 g | Sare: 0.59 g
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="td1">
+                    <h2>Peynirli vegetal (300g)</h2>
+                    <p>
+                        blat (160g), sos roșii (20g), cașcaval
+                        vegetal (80g), ardei (10g), ciuperci (10g)
+                        măsline (10g), porumb (10g)
+                        Valori nutritionale / 100g
+                        Valoare energetica: 359.25 kCal / 1520.25 kJ 
+                        Grasimi: 5.24 g | acizi grasi saturati: 1.69 g 
+                        Glucide: 67.41 g | Zaharuri: 0.81 g 
+                        Proteine: 10.62 g | Sare: 0.46 g
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="td1">
+                    <h2>Peynirli Aloha (300g)</h2>
+                    <p>
+                        blat (160g), sos roșii (20g), mozzarella (70g), 
+                        șuncă (30g), ananas (20g)
+                        Valori nutritionale / 100g
+                        Valoare energetica: 430.01 kCal / 1816.98 kJ 
+                        Grasimi: 8.46 g | acizi grasi saturati: 3.84 g 
+                        Glucide: 71.47 g | Zaharuri: 1.58 g 
+                        Proteine: 17.00 g | Sare: 0.31 g
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="td1">
+                    <h2>Peynirli Quatro Formaggi 
+                        (300g)</h2>
+                    <p>
+                        blat (160g), sos roșii (20g), mozzarella (80g)
+                        parmezan, cașcaval (10g)
+                        emmentaler (10g), gorgonzola (10g)
+                        roșii (10g)
+                        Valori nutritionale / 100g
+                        Valoare energetica: 441.01 kCal / 1861.60 kJ 
+                        Grasimi: 10.15 g | acizi grasi saturati: 4.19 g 
+                        Glucide: 68.85 g | Zaharuri: 0.99 g 
+                        Proteine: 18.57 g | Sare: 0.34 g
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="td1">
+                    <h2>Peynirli Quatro Carni (300g)</h2>
+                    <p>
+                        blat (160g), sos roșii (10g), mozzarella (80g)
+                        cabanos (10g), șuncă (20g), kaiser (20g)
+                        Valori nutritionale / 100g
+                        Valoare energetica: 439.57 kCal / 1854.31 kJ 
+                        Grasimi: 11.08 g | acizi grasi saturati: 4.93 g 
+                        Glucide: 67.10 g | Zaharuri: 0.81 g 
+                        Proteine: 17.86 g | Sare: 2.64 g
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="td1">
+                    <h2>Peynirli Pepperoni (370g)</h2>
+                    <p>
+                        blat (160g), sos roșii (20g), mozzarella (80g)
+                        pepperoni (40g)
+                        Valori nutritionale / 100g
+                        Valoare energetica: 443.78 kCal / 1875.25 kJ 
+                        Grasimi: 8.63 g | acizi grasi saturati: 4.05 g 
+                        Glucide: 74.53 g | Zaharuri: 1.30 g 
+                        Proteine: 16.99 g | Sare: 0.34 g 
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="td1">
+                    <h2>Peynirli Quatro Stagioni 
+                        (300g)</h2>
+                    <p>
+                        blat (160g), sos roșii (20g), mozzarella (80g)
+                        ciuperci (10g), șuncă (20g), porumb (10g)
+                        roșii (10g)
+                        Valori nutritionale / 100g
+                        Valoare energetica: 427.87 kCal / 1807.90 kJ 
+                        Grasimi: 8.43 g | acizi grasi saturati: 3.85 g 
+                        Glucide: 71.14 g | Zaharuri: 0.91 g 
+                        Proteine: 16.87 g | Sare: 0.31 g
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="td1">
+                    <h2>Peynirli Inna (400g)</h2>
+                    <p>
+                        blat (160g), roșii cuburi (10g)
+                        mozzarella (80g), sos roșii (20g)
+                        mușchi file (20g), cabanos (20g)
+                        Valori nutritionale / 100g
+                        Valoare energetica: 428.06 kCal / 1808.03 kJ 
+                        Grasimi: 8.97 g | acizi grasi saturati: 4.06 g 
+                        Glucide: 68.45 g | Zaharuri: 1.00 g 
+                        Proteine: 18.38 g | Sare: 0.35 g 
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="td1">
+                    <h2>Peynirli Kebab (300g)</h2>
+                    <p>
+                        blat (160g), sos roșii (10g), mozzarella (50g)
+                        kebab (80g), roșii felii (10g), ceapă roșie
+                        murături, cartofi
+                        Valori nutritionale / 100g
+                        Valoare energetica: 402.43 kCal / 1698.77 kJ 
+                        Grasimi: 9.26 g | acizi grasi saturati: 2.40 g 
+                        Glucide: 66.13 g | Zaharuri: 1.26 g 
+                        Proteine: 13.65 g | Sare: 0.31 g  
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="td1">
+                    <h2>Peynirli Pollo (300g)</h2>
+                    <p>
+                        blat (160g), sos roșii (20g), mozzarella (50g)
+                        piept de pui (30g), gorgonzola (10g)
+                        măsline (10g), porumb (10g)
+                        ardei kapia (10g)
+                        Valori nutritionale / 100g
+                        Valoare energetica: 402.47 kCal / 1699.89 kJ 
+                        Grasimi: 8.50 g | acizi grasi saturati: 3.72 g 
+                        Glucide: 65.56 g | Zaharuri: 0.57 g 
+                        Proteine: 15.94 g | Sare: 0.61 g
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="headline" id="dont-include">Paste</td> 
+            </tr>
+
+            <tr>
+                <td class="td1">
+                    <h2>Paste Carbonara (370g)</h2>
+                    <p>
+                        penne (200g), smântână (50g), 
+                        kaiser (70g), parmezan (50g)
+                        Valori nutritionale / 100g
+                        Valoare energetica: 251.81 kCal / 1060.61 kJ 
+                        Grasimi: 7.65 g | acizi grasi saturati: 5.55 g 
+                        Glucide: 35.48 g | Zaharuri: 2.86 g 
+                        Proteine: 10.26 g | Sare: 0.93 g
+                        
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="td1">
+                    <h2>Paste cu ton (350g)</h2>
+                    <p>
+                        penne (200g), ton (80g)
+                        sos roșii (50g), ceapă (20g)
+                        Valori nutritionale / 100g
+                        Valoare energetica: 219.56 kCal / 930.62 kJ 
+                        Grasimi: 2.01 g | acizi grasi saturati: 0.56 g 
+                        Glucide: 37.89 g | Zaharuri: 1.95 g 
+                        Proteine: 12.47 g | Sare: 0.36 g
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="td1">
+                    <h2>Paste cu piept de pui și
+                        ciuperci (410g)</h2>
+                    <p>
+                        penne (200g), smântână (50g)
+                        ciuperci (30g), piept de pui (80g)
+                        parmezan (30g), ardei (20g)
+                        Valori nutritionale / 100g
+                        Valoare energetica: 240.03 kCal / 1012.54 kJ 
+                        Grasimi: 6.08 g | acizi grasi saturati: 4.31 g 
+                        Glucide: 32.43 g | Zaharuri: 3.05 g 
+                        Proteine: 13.89 g | Sare: 0.37 g
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="td1">
+                    <h2>Paste cu legume (350g)</h2>
+                    <p>
+                        penne (200g), ardei (30g), măsline (30g)
+                        dovlecel (30g), ciuperci (30g), sos roșii (30g)
+                        Valori nutritionale / 100g
+                        Valoare energetica: 230.13 kCal / 974.61 kJ 
+                        Grasimi: 2.74 g | acizi grasi saturati: 0.73 g 
+                        Glucide: 44.76 g | Zaharuri: 8.12 g 
+                        Proteine: 6.60 g | Sare: 1.92 g
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="td1">
+                    <h2>Paste Quatro Formaggi (380g)</h2>
+                    <p>
+                        penne (200g), cașcaval (30g), emmentaler (30g)
+                        gorgonzola (30g), parmezan (30g)
+                        roșii cherry (30g), sos (30g)
+                        Valori nutritionale / 100g
+                        Valoare energetica: 322.05 kCal / 1357.58 kJ 
+                        Grasimi: 8.90 g | acizi grasi saturati: 5.74 g 
+                        Glucide: 45.09 g | Zaharuri: 7.93 g 
+                        Proteine: 15.41 g | Sare: 1.95 g
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="td1">
+                    <h2>Paste cu fructe de mare (375g)</h2>
+                    <p>
+                        penne (200g), fructe de mare (80g)
+                        sos alb (40g), roșii cherry (30g)
+                        busuioc, usturoi (20g)
+                        Valori nutritionale / 100g
+                        Valoare energetica: 220.48 kCal / 935.63 kJ 
+                        Grasimi: 1.13 g | acizi grasi saturati: 0.43 g 
+                        Glucide: 43.60 g | Zaharuri: 8.73 g 
+                        Proteine: 8.98 g | Sare: 1.85 g.
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="td1">
+                    <h2>Tagliatele (320g)</h2>
+                    <p>
+                        tagliatele cu sos pesto, usturoi
+                        și parmezan:
+                        tagliatele (200g), sos pesto (40g), roșii 
+                        cherry (40g), busuioc, parmezan (30g)
+                        Valori nutritionale / 100g
+                        Valoare energetica: 342.54 kCal / 1433.94 kJ 
+                        Grasimi: 17.49 g | acizi grasi saturati: 4.44 g 
+                        Glucide: 33.48 g | Zaharuri: 1.70 g 
+                        Proteine: 12.79 g | Sare: 0.67 g
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="headline" id="dont-include">Grill</td> 
+            </tr>
+
+            <tr>
+                <td class="td1">
+                    <h2>Piept de pui la grătar (210g)</h2>
+                    <p>
+                        piept de pui (200g)
+                        Valori nutritionale / 100g
+                        Valoare energetica: 101.00 kCal / 428.00 kJ 
+                        Grasimi: 1.00 g | acizi grasi saturati: 0.00 g 
+                        Glucide: 0.00 g | Zaharuri: 0.00 g 
+                        Proteine: 23.00 g | Sare: 1.00 g
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="td1">
+                    <h2>Ceafă de porc la grătar (230g)</h2>
+                    <p>
+                        ceafă de porc (220g)
+                        Valori nutritionale / 100g
+                        Valoare energetica: 133.08 kCal / 551.34 kJ 
+                        Grasimi: 11.40 g | acizi grasi saturati: 4.00 g 
+                        Glucide: 2.60 g | Zaharuri: 0.93 g 
+                        Proteine: 5.02 g | Sare: 0.00 g
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="td1">
+                    <h2>Pulpă de curcan la 
+                        grătar (200g)</h2>
+                    <p>
+                        pulpă de curcan la grătar (200g)
+                        Valori nutritionale / 100g
+                        Valoare energetica: 210.28 kCal 
+                        / 873.69 kJ 
+                        Grasimi: 16.00 g | acizi grasi saturati: 4.37 g 
+                        Glucide: 0.17 g | Zaharuri: 0.00 g 
+                        Proteine: 16.40 g | Sare: 0.08 g
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="td1">
+                    <h2>Mici de porc cu vită
+                        la grătar (150g)</h2>
+                    <p>
+                        mici (60g), turtă (50g), muștar (30g)
+                        Valori nutritionale / 100g
+                        Valoare energetica: 214.45 kCal / 898.07 kJ 
+                        Grasimi: 10.67 g | acizi grasi saturati: 3.57 g 
+                        Glucide: 18.83 g | Zaharuri: 1.70 g 
+                        Proteine: 10.76 g | Sare: 0.71 g
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="headline" id="dont-include">Specialități</td> 
+            </tr>
+
+            <tr>
+                <td class="td1">
+                    <h2>Siluete pescărești (450g)</h2>
+                    <p>
+                        ton (40g), butter fish (40g), fructe de mare (50g)
+                        orez basmatic (130g), legume la
+                        tigaie (150g), sos lămâie (30g)
+                        Valori nutritionale / 100g
+                        Valoare energetica: 170.34 kCal / 721.98 kJ 
+                        Grasimi: 1.56 g | acizi grasi saturati: 0.14 g 
+                        Glucide: 29.73 g | Zaharuri: 1.07 g 
+                        Proteine: 9.34 g | Sare: 0.10 g
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="td1">
+                    <h2>Șnițel de pui (350g)</h2>
+                    <p>
+                        Șnițel de pui în pesmet cu mix de semințe
+                        și legume la grătar
+                        - piept de pui (200g), mix semințe (20g)
+                        legume asortate (100g), pesmet (30g)
+                        Valori nutritionale / 100g
+                        Valoare energetica: 98.55 kCal / 417.93 kJ 
+                        Grasimi: 0.73 g | acizi grasi saturati: 0.13 g 
+                        Glucide: 8.28 g | Zaharuri: 1.82 g 
+                        Proteine: 14.70 g | Sare: 0.65 g
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="td1">
+                    <h2>Piept de curcan (400g)</h2>
+                    <p>
+                        Piept de curcan cu gorgonzola și coacăze roșii
+                        piept de curcan (180g), gorgonzola (70g)
+                        orez sălbatic (100g), coacăze (20g), sos (30g)
+                        Valori nutritionale / 100g
+                        Valoare energetica: 153.59 kCal / 643.44 kJ 
+                        Grasimi: 7.46 g | acizi grasi saturati: 3.60 g 
+                        Glucide: 7.02 g | Zaharuri: 4.33 g 
+                        Proteine: 14.60 g | Sare: 1.92 g
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="td1">
+                    <h2>Frigărui de pui (350g)</h2>
+                    <p>
+                        piept de pui (100g), ardei (30g), ceapă
+                        dovleac (120g), lămâie (20g), sos de lămâie (20g)
+                        ciuperci (30g), morcov (20g)
+                        Valori nutritionale / 100g
+                        Valoare energetica: 36.86 kCal / 156.23 kJ 
+                        Grasimi: 0.35 g | acizi grasi saturati: 2.39 g 
+                        Glucide: 2.41 g | Zaharuri: 1.56 g 
+                        Proteine: 6.02 g | Sare: 0.25 g
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="td1">
+                    <h2>Coaste de purcel (600g)</h2>
+                    <p>
+                        coaste de purcel (350g), cartofi wedges (150g)
+                        fasole verde (70g), sos BBQ (30g)
+                        Valori nutritionale / 100g
+                        Valoare energetica: 192.84 kCal / 805.58 kJ 
+                        Grasimi: 11.21 g | acizi grasi saturati: 3.78 g 
+                        Glucide: 11.63 g | Zaharuri: 3.07 g 
+                        Proteine: 11.35 g | Sare: 1.58 g 
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="td1">
+                    <h2>Amestecătură târgoveață (520g)</h2>
+                    <p>
+                        pastramă oaie (60g), cârnăciori oaie (60g)
+                        mici oaie (60g), cotlet porc (60g), piept de 
+                        pui (60g), cartofi chips (110g), murături (100g)
+                        Valori nutritionale / 100g
+                        Valoare energetica: 309.64 kCal / 1290.01 kJ 
+                        Grasimi: 20.76 g | acizi grasi saturati: 4.06 g 
+                        Glucide: 7.92 g | Zaharuri: 1.75 g 
+                        Proteine: 22.78 g | Sare: 3.75 g
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="td1">
+                    <h2>Tigaie picantă cu fructe de mare
+                        (500g)</h2>
+                    <p>
+                        mix fructe de mare (200g), vin alb (20ml)
+                        usturoi, pâine toast prăjită (80g)
+                        legume asortate (150g), ardei iute (20g)
+                        smântână (30g)
+                        Valori nutritionale / 100g
+                        Valoare energetica: 92.63 kCal / 392.12 kJ 
+                        Grasimi: 1.23 g | acizi grasi saturati: 0.19 g 
+                        Glucide: 12.47 g | Zaharuri: 2.09 g 
+                        Proteine: 7.92 g | Sare: 0.35 g
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="td1">
+                    <h2>Tochitură Moldovenească (600g)</h2>
+                    <p>
+                        cârnați de porc (70g), ceafă de porc (70g)
+                        pulpă de porc (70g), slăninuță (50g), ou (50g)
+                        brânză de burduf (80g), mamaligă (100g)
+                        murături (100g)
+                        Valori nutritionale / 100g
+                        Valoare energetica: 188.98 kCal / 784.88 kJ 
+                        Grasimi: 14.64 g | acizi grasi saturati: 2.87 g 
+                        Glucide: 3.81 g | Zaharuri: 0.23 g 
+                        Proteine: 10.50 g | Sare: 0.41 g
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="td1">
+                    <h2>Tigaie picantă de pui (520g)</h2>
+                    <p>
+                        piept de pui (200g), ardei copți (40g)
+                        cucina (60g), mămăligă (100g), legume (80g)
+                        sweet chilli (20g)
+                        Valori nutritionale / 100g
+                        Valoare energetica: 100.40 kCal / 422.64 kJ 
+                        Grasimi: 3.25 g | acizi grasi saturati: 1.46 g 
+                        Glucide: 7.38 g | Zaharuri: 3.08 g 
+                        Proteine: 10.42 g | Sare: 0.57 g
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="td1">
+                    <h2>Fritto Misto (500g)</h2>
+                    <p>
+                        hamsii (80g), creveți (80g), midii (80g),
+                        inele calamar (80g), dovlecei (50g), ardei (50g),
+                        morcov (50g), lămâie (30g), inele de ceapă
+                        sos (30g)
+                        Valori nutritionale / 100g
+                        Valoare energetica: 74.06 kCal / 312.74 kJ 
+                        Grasimi: 1.62 g | acizi grasi saturati: 0.07 g 
+                        Glucide: 3.50 g | Zaharuri: 1.29 g 
+                        Proteine: 11.38 g | Sare: 0.04 g
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="td1">
+                    <h2>Ceafă de porc cu cartofi wedges
+                        (450g)</h2>
+                    <p>
+                        ceafă de porc (200g), cartofi wedges (250g)
+                    </p>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="headline" id="dont-include">Fast Food</td> 
+            </tr>
+
+            <tr>
+                <td class="td1">
+                    <h2>Aripioare crispy, picante 
+                        (450g)</h2>
+                    <p>
+                        aripioare (200g), cartofi prăjiți (90g)
+                        cașcaval pane (80g), salată de varză (50g)
+                        sos (30g)
+                        Valori nutritionale / 100g
+                        Valoare energetica: 200.08 kCal / 831.50 kJ 
+                        Grasimi: 15.06 g | acizi grasi saturati: 1.36 g 
+                        Glucide: 12.83 g | Zaharuri: 8.29 g 
+                        Proteine: 3.29 g | Sare: 0.37 g 
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="td1">
+                    <h2>Șnițel de pui (450g)
+                        crocant/clasic</h2>
+                    <p>
+                        piept de pui (200g), ou (50g)
+                        cartofi prăjiți (90g), salată de varză
+                        (50g), pesmet (20g), sos usturoi (30g)
+                        Valori nutritionale / 100g
+                        Valoare energetica: 158.58 kCal / 665.62 kJ 
+                        Grasimi: 6.66 g | acizi grasi saturati: 0.35 g 
+                        Glucide: 12.38 g | Zaharuri: 0.87 g 
+                        Proteine: 12.27 g | Sare: 0.66 g
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="td1">
+                    <h2>Shaorma de pui la
+                        farfurie (500g)</h2>
+                    <p>
+                        lipie (35g), carne de pui (200g)
+                        cartofi prăjiți (100g), salată de varză (50g)
+                        roșii (20g), ceapă roșie (20g), sos rose (30g)
+                        sos usturoi (30g)
+                        Valori nutritionale / 100g
+                        Valoare energetica: 208.75 kCal / 876.47 kJ 
+                        Grasimi: 8.56 g | acizi grasi saturati: 0.52 g 
+                        Glucide: 27.37 g | Zaharuri: 4.10 g 
+                        Proteine: 5.56 g | Sare: 1.15 g
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="td1">
+                    <h2>Shaorma de pui la
+                        lipie (440g)</h2>
+                    <p>
+                        lipie (70g), carne de pui (160g)
+                        cartofi prăjiți (50g), salată de varză (40g)
+                        roșii (20g), ceapă roșie (20g), sos usturoi (30g)
+                        sos rose (30g)
+                        Valori nutritionale / 100g
+                        Valoare energetica: 212.94 kCal / 894.86 kJ 
+                        Grasimi: 8.11 g | acizi grasi saturati: 1.07 g 
+                        Glucide: 29.47 g | Zaharuri: 5.41 g 
+                        Proteine: 5.52 g | Sare: 1.49 g
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="td1">
+                    <h2>Cașcaval pane cu cartofi
+                        copți (410g)</h2>
+                    <p>
+                        cașcaval (150g), ou (50g)
+                        pesmet (20g), cartofi (80g), sos rose (30g)
+                        salată de varză (50g), murături (20g)
+                        Valori nutritionale / 100g
+                        Valoare energetica: 162.22 kCal / 680.09 kJ 
+                        Grasimi: 7.48 g | acizi grasi saturati: 0.08 g 
+                        Glucide: 12.91 g | Zaharuri: 4.80 g 
+                        Proteine: 10.82 g | Sare: 2.06 g
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="td1">
+                    <h2>Burger Inna (550g)</h2>
+                    <p>
+                        chiflă pe vatră (100g), carne vită (200g), kaiser (30g)
+                        cheddar (40g), salată varză (20g), roșii (20g)
+                        castraveți murați (20g), sos rose, cartofi
+                        prăjiți (90g), sos usturoi (30g)
+                        Valori nutritionale / 100g
+                        Valoare energetica: 234.26 kCal / 980.97 kJ 
+                        Grasimi: 11.71 g | acizi grasi saturati: 1.84 g 
+                        Glucide: 17.73 g | Zaharuri: 2.27 g 
+                        Proteine: 14.49 g | Sare: 0.98 g
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="td1">
+                    <h2>Burger Crispy (450g)</h2>
+                    <p>
+                        piept de pui (140g), chiflă pe vatră (100g)
+                        cașcaval (40g), salată varză (20g), salată verde
+                        (20g), roșii (20g), sos rose, sos usturoi (30g)
+                        cartofi prăjiți (90g)
+                        Valori nutritionale / 100g
+                        Valoare energetica: 202.60 kCal / 850.17 kJ 
+                        Grasimi: 8.69 g | acizi grasi saturati: 0.37 g 
+                        Glucide: 18.37 g | Zaharuri: 2.67 g 
+                        Proteine: 12.72 g | Sare: 1.10 g
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="td1">
+                    <h2>Burger Junior (400g)</h2>
+                    <p>
+                        burger vită (100g), chiflă pe vatră (100g)
+                        cheddar (20g), sos usturoi (30g), sos rose,
+                        cartofi prăjiți (90g), roșii (50g)
+                        Valori nutritionale / 100g
+                        Valoare energetica: 248.34 kCal / 1040.50 kJ 
+                        Grasimi: 11.94 g | acizi grasi saturati: 1.39 g 
+                        Glucide: 23.24 g | Zaharuri: 3.26 g 
+                        Proteine: 11.97 g | Sare: 0.96 g
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="td1">
+                    <h2>Burger Grill (460g)</h2>
+                    <p>
+                        piept de pui (140g), chiflă pe vatră (100g)
+                        cașcaval (40g), salată de varză (20g)
+                        salată verde (20g), roșii (20g), castraveți
+                        murați, sos rose, sos usturoi (30g), cartofi
+                        prăjiți (90g)
+                        Valori nutritionale / 100g
+                        Valoare energetica: 198.54 kCal / 833.17 kJ 
+                        Grasimi: 8.51 g | acizi grasi saturati: 0.36 g 
+                        Glucide: 18.03 g | Zaharuri: 2.64 g 
+                        Proteine: 12.46 g | Sare: 1.07 g
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="td1">
+                    <h2>Burger Vegan (420g)</h2>
+                    <p>
+                        burger vegan (120g), chiflă pe vatră (100g)
+                        cașcaval vegetal (20g), roșii (20g), castraveți
+                        murați, salată varză (20g), salată verde (20g)
+                        cartofi prăjiți (90g), sos usturoi (30g)
+                        Valori nutritionale / 100g
+                        Valoare energetica: 240.68 kCal / 1006.30 kJ 
+                        Grasimi: 13.28 g | acizi grasi saturati: 2.90 g 
+                        Glucide: 21.08 g | Zaharuri: 1.82 g 
+                        Proteine: 9.20 g | Sare: 0.97 g
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="td1">
+                    <h2>Crispy Strips (400g)</h2>
+                    <p>
+                        piept de pui (180g), cartofi prăjiți (90g)
+                        salată de varză (50g), sos usturoi (30g)
+                        lipie (50g)
+                        Valori nutritionale / 100g
+                        Valoare energetica: 178.99 kCal / 751.04 kJ 
+                        Grasimi: 7.72 g | acizi grasi saturati: 0.64 g 
+                        Glucide: 14.56 g | Zaharuri: 0.65 g 
+                        Proteine: 12.81 g | Sare: 0.74 g
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="headline" id="dont-include">Salate Garnituri</td> 
+            </tr>
+
+            <tr>
+                <td class="td1">
+                    <h2>Salată de varză și morcov
+                        (250g)</h2>
+                    <p>
+                        varză, morcov
+                        Valori nutritionale / 100g
+                        Valoare energetica: 32.14 kCal / 136.43 kJ 
+                        Grasimi: 0.12 g | acizi grasi saturati: 0.01 g 
+                        Glucide: 6.56 g | Zaharuri: 3.51 g
+                        Proteine: 1.20 g | Sare: 0.03 g
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="td1">
+                    <h2>Salată asortată (250g)</h2>
+                    <p>
+                        salată verde, roșii, castraveți
+                        ardei, ceapă
+                        Valori nutritionale / 100g
+                        Valoare energetica: 23.44 kCal / 99.33 kJ
+                        Grasimi: 0.22 g | acizi grasi saturati: 0.07 g
+                        Glucide: 4.36 g | Zaharuri: 2.18 g
+                        Proteine: 1.00 g | Sare: 0.01 g   
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="td1">
+                    <h2>Salată de roșii cu telemea
+                        (250g)</h2>
+                    <p>
+                        roșii, telemea
+                        Valori nutritionale / 100g
+                        Valoare energetica: 72.54 kCal / 301.67 kJ
+                        Grasimi: 5.31 g | acizi grasi saturati: 3.12 g 
+                        Glucide: 2.38 g | Zaharuri: 0.00 g
+                        Proteine: 3.80 g | Sare: 3.30 g 
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="td1">
+                    <h2>Salată de ardei copți (250g)</h2>
+                    <p>
+                        ardei copți, roșii
+                        Valori nutritionale / 100g
+                        Valoare energetica: 21.44 kCal / 90.84 kJ
+                        Grasimi: 0.22 g | acizi grasi saturati: 0.10 g
+                        Glucide: 4.37 g | Zaharuri: 2.10 g
+                        Proteine: 0.50 g | Sare: 1.75 g
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="td1">
+                    <h2>Salată de murături (250g)</h2>
+                    <p>
+                        castraveți murați, gogonele, gogoșari
+                        Valori nutritionale / 100g
+                        Valoare energetica: 24.60 kCal / 104.31 kJ
+                        Grasimi: 0.20 g / acizi grasi saturati: 0.02 g
+                        Glucide: 4.94 g / Zaharuri: 3.01 g
+                        Proteine: 0.76 g / Sare: 0.00 g
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="headline" id="dont-include">Desert</td> 
+            </tr>
+
+            <tr>
+                <td class="td1">
+                    <h2>Colțunași cu brânză dulce
+                        și sos de smântână (400g)</h2>
+                    <p>
+                        faină (100g), ou, sare, ulei, 
+                        smântână (50g), brânză de vaci (250g)
+                        Valori nutritionale / 100g
+                        Valoare energetica: 159.26 kCal / 672.56 kJ
+                        Grasimi: 3.44 g | acizi grasi saturati: 2.71 g
+                        Glucide: 21.06 g | Zaharuri: 3.01 g
+                        Proteine: 11.01 g | Sare: 0.14 g
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="td1">
+                    <h2>Papanași cu dulceață
+                        de afine (400g)</h2>
+                    <p>
+                        brânză de vaci (150g), ou (25g)
+                        făină (100g), zahăr (25g), smântână (50g)
+                        dulceață afine (50g), zahăr vanilat
+                        esență de vanilie, sare
+                        Valori nutritionale / 100g
+                        Valoare energetica: 210.79 kCal / 890.83 kJ
+                        Grasimi: 4.01 g | acizi grasi saturati: 3.02 g
+                        Glucide: 35.56 g | Zaharuri: 18.44 g
+                        Proteine: 8.12 g | Sare: 0.10 g
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="td1">
+                    <h2>Clătite cu brânză și bezea
+                        la cuptor (400g)</h2>
+                    <p>
+                        brânză de vaci (200g), bezea (100g)
+                        faină (70g), ouă (20g), zahăr (20g)
+                        esență de vanilie, zahar vanilat, sare
+                        Valori nutritionale / 100g
+                        Valoare energetica: 161.20 kCal / 683.27 kJ
+                        Grasimi: 1.46 g | acizi grasi saturati: 0.69 g
+                        Glucide: 25.51 g | Zaharuri: 8.76 g
+                        Proteine: 11.50 g | Sare: 0.14 g    
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="td1">
+                    <h2>Clătite cu dulceață/ciocolată
+                        (300g)</h2>
+                    <p>
+                        faină (70g), ouă (20g), zahăr (20g)
+                        ciocolată / dulceață (150g)
+                        esență de vanilie, zahar vanilat, sare
+                        Valori nutritionale / 100g
+                        Valoare energetica: 293.07 kCal / 1244.16 kJ
+                        Grasimi: 1.12 g | acizi grasi saturati: 0.31 g
+                        Glucide: 66.95 g | Zaharuri: 45.36 g
+                        Proteine: 3.80 g | Sare: 0.02 g
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="td1">
+                    <h2>Tartă cu mere și înghețată
+                        (200g)
+                        </h2>
+                    <p>
+                        unt (34g), ou (10g), smântână (16g), sare,
+                        zahăr (16g), făină (60g), vanilie
+                        înghețată (50g)
+                        Valori nutritionale / 100g
+                        Valoare energetica: 366.31 kCal / 1530.89 kJ
+                        Grasimi: 20.76 g | acizi grasi saturati: 14.12 g
+                        Glucide: 40.09 g | Zaharuri: 14.92 g
+                        Proteine: 4.79 g | Sare: 0.05 g
+                    </p>
+                </td>
+            </tr>
+
+
+
+
+
+
+                
+
+
+
+
+
+            
+        </table>
+       
+<script src="functii.js">
+       
+</script> 
+
+    
+    
+</body>
+</html>
