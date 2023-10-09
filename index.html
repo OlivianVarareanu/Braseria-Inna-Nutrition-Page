@@ -4,29 +4,33 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="icon.png">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>Braseria Inna Meniu Caloric</title>
 </head>
-<body>
+<body style="background-color: #002331;">
 
         <div class="header">
             <a href="https://www.facebook.com/braseriainna.ro"><img src="logo.png" class="header-image" > </a>
             
         </div>
-
-   
-
-        <div class="searchbar" >
-
-            <input type="text" placeholder="  Ce fel de mâncare cauți?" class="input-text" id="search-input">
-            
+        
+        
+        <div class="search-container" >
+            <input type="text" placeholder="Ce fel de mâncare cauți?" class="input-text" id="search-input">
             <button class="search-button" onclick="cautaPreparat()">Caută</button>
         </div>
 
+        <div id="suggestions" style="margin: 10px;">
+            <!-- Aici vor fi afișate sugestiile -->
+        </div>
+
+            
+        
+        <table id="table-search">
         <button id="scrollToTopBtn" onclick="scrollToTop()">
         <img src="button-up.png" alt=""></button>
 
-        <table style="margin: 15px; background-color: rgb(27, 27, 27); padding: 10px;">
+        <table style=" background-color: rgb(255, 255, 255); border-width: 0px;">
             
             <tr>
                 <td class="headline" id="dont-include">Mic dejun</td> 
@@ -82,8 +86,7 @@
 
             <tr>
                 <td class="td1">
-                    <h2>Omletă cu ciuperci/
-                        /spanac (400g)</h2>
+                    <h2>Omletă cu ciuperci/spanac (400g)</h2>
                     <p>ouă (100g), ciuperci/spanac (70g), 
                         cașcaval (30g) , cârnăciori (50g),  rucola, 
                         măsline (30g), roșii (50g) lipie (65g)
@@ -118,8 +121,7 @@
             <tr>
 
                 <td class="td1">
-                    <h2>Lipie cu cremă de avocado
-                        și usturoi (230g)</h2>
+                    <h2>Lipie cu cremă de avocado și usturoi (230g)</h2>
                     <p>lipie (100g), usturoi, avocado (100g),
                         ardei gras, roșii (30g), cucina
                         Valori nutritionale / 100g
@@ -135,8 +137,7 @@
 
                 
                 <td class="td1">
-                    <h2>Bruschete cu somon
-                        și roșii (260g)</h2>
+                    <h2>Bruschete cu somon și roșii (260g)</h2>
                     <p>somon (35g), roșii (100g), pâine toast (80g),
                         usturoi, cremă de brânză (50g)
                         Valori nutritionale / 100g
@@ -150,8 +151,7 @@
             
             <tr>    
                 <td class="td1">
-                    <h2> Bruschete cu ardei
-                        copți (250g)</h2> 
+                    <h2>Bruschete cu ardei copți (250g)</h2> 
                     <p>ardei copți (110g), cremă de brânză (50g),
                         pâine toast (80g), usturoi, măsline
                         Valori nutritionale / 100g
@@ -169,8 +169,7 @@
 
             <tr>
                 <td class="td1">
-                    <h2>Supă cremă de ciuperci
-                        (400g)</h2>
+                    <h2>Supă cremă de ciuperci (400g)</h2>
                     <p>
                         ciuperci (300g), crutoane (50g), 
                         cucina (50ml)
@@ -185,8 +184,7 @@
 
             <tr>
                 <td class="td1">
-                    <h2>Supă cremă de dovlecel
-                        cu cârnăciori picanți (400g)</h2>
+                    <h2>Supă cremă de dovlecel cu cârnăciori picanți (400g)</h2>
                     <p>
                         dovlecel (250g), cârnăciori (50g),
                         crutoane (50g), cucina (50ml)
@@ -201,8 +199,7 @@
 
             <tr>
                 <td class="td1">
-                    <h2>Supă cremă de broccoli
-                        (400g)</h2>
+                    <h2>Supă cremă de broccoli (400g)</h2>
                     <p>
                         broccoli (250g), cartofi (50g), 
                         crutoane (50g), cucina (50ml)
@@ -217,8 +214,7 @@
 
             <tr>
                 <td class="td1">
-                    <h2>Supă cremă de cartofi
-                        cu bacon (400g)</h2>
+                    <h2>Supă cremă de cartofi cu bacon (400g)</h2>
                     <p>
                         cartofi (250g), kaiser (50g),
                         crutoane (50g), cucina (50ml)
@@ -248,8 +244,7 @@
 
             <tr>
                 <td class="td1">
-                    <h2>Ciorba zilei la recomandarea
-                        bucătarului (600g)</h2>
+                    <h2>Ciorba zilei la recomandarea bucătarului (600g)</h2>
                     <p>
                         Ciorba include ardei, smântână, ardei iute și turtă pe vatră
                         Perișoare -
@@ -407,8 +402,7 @@
 
             <tr>
                 <td class="td1">
-                    <h2>Platou Fălticenean
-                        (700g)</h2>
+                    <h2>Platou Fălticenean (700g)</h2>
                     <p>
                         pulpă curcan (50g), ficat de curcan (50g)
                         piept de pui (50g), aripioare (70g),
@@ -771,8 +765,7 @@
 
             <tr>
                 <td class="td1">
-                    <h2>Peynirli Quatro Formaggi 
-                        (300g)</h2>
+                    <h2>Peynirli Quatro Formaggi (300g)</h2>
                     <p>
                         blat (160g), sos roșii (20g), mozzarella (80g)
                         parmezan, cașcaval (10g)
@@ -819,8 +812,7 @@
 
             <tr>
                 <td class="td1">
-                    <h2>Peynirli Quatro Stagioni 
-                        (300g)</h2>
+                    <h2>Peynirli Quatro Stagioni (300g)</h2>
                     <p>
                         blat (160g), sos roșii (20g), mozzarella (80g)
                         ciuperci (10g), șuncă (20g), porumb (10g)
@@ -920,8 +912,7 @@
 
             <tr>
                 <td class="td1">
-                    <h2>Paste cu piept de pui și
-                        ciuperci (410g)</h2>
+                    <h2>Paste cu piept de pui și ciuperci (410g)</h2>
                     <p>
                         penne (200g), smântână (50g)
                         ciuperci (30g), piept de pui (80g)
@@ -1033,8 +1024,7 @@
 
             <tr>
                 <td class="td1">
-                    <h2>Pulpă de curcan la 
-                        grătar (200g)</h2>
+                    <h2>Pulpă de curcan la grătar (200g)</h2>
                     <p>
                         pulpă de curcan la grătar (200g)
                         Valori nutritionale / 100g
@@ -1049,8 +1039,7 @@
 
             <tr>
                 <td class="td1">
-                    <h2>Mici de porc cu vită
-                        la grătar (150g)</h2>
+                    <h2>Mici de porc cu vită la grătar (150g)</h2>
                     <p>
                         mici (60g), turtă (50g), muștar (30g)
                         Valori nutritionale / 100g
@@ -1164,8 +1153,7 @@
 
             <tr>
                 <td class="td1">
-                    <h2>Tigaie picantă cu fructe de mare
-                        (500g)</h2>
+                    <h2>Tigaie picantă cu fructe de mare (500g)</h2>
                     <p>
                         mix fructe de mare (200g), vin alb (20ml)
                         usturoi, pâine toast prăjită (80g)
@@ -1232,8 +1220,7 @@
 
             <tr>
                 <td class="td1">
-                    <h2>Ceafă de porc cu cartofi wedges
-                        (450g)</h2>
+                    <h2>Ceafă de porc cu cartofi wedges (450g)</h2>
                     <p>
                         ceafă de porc (200g), cartofi wedges (250g)
                     </p>
@@ -1247,8 +1234,7 @@
 
             <tr>
                 <td class="td1">
-                    <h2>Aripioare crispy, picante 
-                        (450g)</h2>
+                    <h2>Aripioare crispy, picante (450g)</h2>
                     <p>
                         aripioare (200g), cartofi prăjiți (90g)
                         cașcaval pane (80g), salată de varză (50g)
@@ -1264,8 +1250,7 @@
 
             <tr>
                 <td class="td1">
-                    <h2>Șnițel de pui (450g)
-                        crocant/clasic</h2>
+                    <h2>Șnițel de pui (450g) crocant/clasic</h2>
                     <p>
                         piept de pui (200g), ou (50g)
                         cartofi prăjiți (90g), salată de varză
@@ -1281,8 +1266,7 @@
 
             <tr>
                 <td class="td1">
-                    <h2>Shaorma de pui la
-                        farfurie (500g)</h2>
+                    <h2>Shaorma de pui la farfurie (500g)</h2>
                     <p>
                         lipie (35g), carne de pui (200g)
                         cartofi prăjiți (100g), salată de varză (50g)
@@ -1299,8 +1283,7 @@
 
             <tr>
                 <td class="td1">
-                    <h2>Shaorma de pui la
-                        lipie (440g)</h2>
+                    <h2>Shaorma de pui la lipie (440g)</h2>
                     <p>
                         lipie (70g), carne de pui (160g)
                         cartofi prăjiți (50g), salată de varză (40g)
@@ -1317,8 +1300,7 @@
 
             <tr>
                 <td class="td1">
-                    <h2>Cașcaval pane cu cartofi
-                        copți (410g)</h2>
+                    <h2>Cașcaval pane cu cartofi copți (410g)</h2>
                     <p>
                         cașcaval (150g), ou (50g)
                         pesmet (20g), cartofi (80g), sos rose (30g)
@@ -1439,8 +1421,7 @@
 
             <tr>
                 <td class="td1">
-                    <h2>Salată de varză și morcov
-                        (250g)</h2>
+                    <h2>Salată de varză și morcov (250g)</h2>
                     <p>
                         varză, morcov
                         Valori nutritionale / 100g
@@ -1469,8 +1450,7 @@
 
             <tr>
                 <td class="td1">
-                    <h2>Salată de roșii cu telemea
-                        (250g)</h2>
+                    <h2>Salată de roșii cu telemea (250g)</h2>
                     <p>
                         roșii, telemea
                         Valori nutritionale / 100g
@@ -1516,8 +1496,7 @@
 
             <tr>
                 <td class="td1">
-                    <h2>Colțunași cu brânză dulce
-                        și sos de smântână (400g)</h2>
+                    <h2>Colțunași cu brânză dulce și sos de smântână (400g)</h2>
                     <p>
                         faină (100g), ou, sare, ulei, 
                         smântână (50g), brânză de vaci (250g)
@@ -1532,8 +1511,7 @@
 
             <tr>
                 <td class="td1">
-                    <h2>Papanași cu dulceață
-                        de afine (400g)</h2>
+                    <h2>Papanași cu dulceață de afine (400g)</h2>
                     <p>
                         brânză de vaci (150g), ou (25g)
                         făină (100g), zahăr (25g), smântână (50g)
@@ -1550,8 +1528,7 @@
 
             <tr>
                 <td class="td1">
-                    <h2>Clătite cu brânză și bezea
-                        la cuptor (400g)</h2>
+                    <h2>Clătite cu brânză și bezea la cuptor (400g)</h2>
                     <p>
                         brânză de vaci (200g), bezea (100g)
                         faină (70g), ouă (20g), zahăr (20g)
@@ -1567,8 +1544,7 @@
 
             <tr>
                 <td class="td1">
-                    <h2>Clătite cu dulceață/ciocolată
-                        (300g)</h2>
+                    <h2>Clătite cu dulceață/ciocolată (300g)</h2>
                     <p>
                         faină (70g), ouă (20g), zahăr (20g)
                         ciocolată / dulceață (150g)
@@ -1584,9 +1560,7 @@
 
             <tr>
                 <td class="td1">
-                    <h2>Tartă cu mere și înghețată
-                        (200g)
-                        </h2>
+                    <h2>Tartă cu mere și înghețată (200g)</h2>
                     <p>
                         unt (34g), ou (10g), smântână (16g), sare,
                         zahăr (16g), făină (60g), vanilie
