@@ -1,10 +1,10 @@
-@media only screen and (min-width: 440px)
+@media only screen
 {
 
 
 body {
 
-    background-color: rgb(53, 53, 53);
+    background-color: rgb(207, 207, 207);
     margin: 0px;
 
 }
@@ -33,40 +33,17 @@ img {
     flex-wrap: wrap;
     margin: 30px;
     margin-top: 0px;
-    
-    
     background-color: rgb(40, 40, 40);
     height: 2000px;
     opacity: 100%;
 }
 
 
-
-.searchbar {
-    height: 50px;
-    width: 100%;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-   
-}
-
-.input-text{
-    width: 13rem;
-    height: 2rem;
-    border-radius: 10px;
-    border: none;
-    flex: 50%;
-   
-    
-}
-
 .search-button {
     background-color:rgb(83, 147, 65);
     color: white;
     border: 0px;
-    border-radius: 30px;
+    border-radius: 9px;
     margin-left: 10px;
     width: 5rem;
     height: 2rem;
@@ -77,7 +54,7 @@ img {
     
 }
 
-@media only screen and (max-width: 440px)
+@media only screen 
 {
     
 
@@ -106,66 +83,88 @@ img {
         display: block;
     }
     
-    .content-wrapper{
-        width: 100%;
+    
+
+   
+    
+    
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .search-container {
         display: flex;
-        flex-wrap: wrap;
-        margin: 0px;
-        margin-top: 0px;
-        
-        
-        background-color: rgb(40, 40, 40);
-        height: 2000px;
-        opacity: 100%;
+        justify-content: space-between;
+        margin-left: 15px;
+        margin-right: 15px;
     }
+
+   
     
-    
-    
-    .searchbar {
-        height: 80px;
-        width: 1fr;
-        padding: 20px;
-        display: block;
-        
-        
-       
-    }
-    
-    .input-text{
-        
-        height: 2rem;
+    .input-text {
+        width: 70%;
+        margin-right: 10px; /* Spatiu intre input si buton */
+        padding: 10px;
         border-radius: 10px;
-        border: none;
-        display: block;
-        width: 100%;
-       
-        
+        box-shadow: none;
+        border-width: 2px;
+        border-color: #000000;
+        overflow: hidden; /* Ascunde textul care depaseste latimea input-ului */
     }
     
     .search-button {
-        background-color:rgb(83, 147, 65);
-        color: white;
-        border: 0px;
-        border-radius: 30px;
-        margin-top: 10px;
-        width: 5rem;
-        height: 2rem;
-        cursor: pointer;
-        width: 100%;
-        
+        width: 30%;
+        height: 50px;
+        padding: 10px;
+        font-size: 16px;
     }
+    
+    /* Stilizare la hover pentru buton */
+    .search-button:hover {
+        background-color: #12ca52;
+    }
+      
+      
+
+
+
+      
+  
+
+
+
+
+
+
+
+
+
+
+
+
 
     .td1 {
-        color: white;
-        background-color: rgb(0, 0, 0);
+        color: rgb(0, 0, 0);
+        background-color:#002331;
         border: 2px; 
         border-color: rgb(21, 194, 122);
-        padding: 10px;
+        
         
     }
 
+    table {
+    border-collapse: collapse;
+    border: none;
+  
+    }
+
+    
+
     .highlighted {
-        background-color: rgb(19, 114, 43);
+        background-color: rgb(1, 180, 46);
+        
         
         transition: background-color 0.5s;
     }
@@ -178,25 +177,50 @@ img {
     }
 
     h2 {
-        color: rgb(15, 199, 15);
+        vertical-align: middle;
+        color: #ffffff;
         text-align: center;
+        background-color:#002331;
         
+        
+        margin: 10pxpx;
+        padding: 10px;
+    }
+
+   
+    tr {
+        vertical-align: middle;
     }
 
     p {
         text-align: justify;
+        padding: 10px;
+        margin: 10px;
+        color: white;
     }
 
     .headline {
-        color:aliceblue;
+        color:#ffcc54;
         font-style: normal;
         text-align: center;
         font-size: 30px;
         font-weight: bold;
-        background-color: rgba(195, 214, 18, 0.541);
+        background-color: #003551;
+        
         font-family: roboto;
         padding: 10px;
     }
+
+    .suggestions {
+        margin: 15px;
+        margin-bottom: 10px;
+        color: white;
+
+        }
+        
+}
+
+   
 
     #scrollToTopBtn {
         display: none;
@@ -234,4 +258,4 @@ img {
         display: block;
     }
         
-    }
+    
